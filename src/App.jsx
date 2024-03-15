@@ -24,7 +24,7 @@ function App() {
             elementum mauris aenean neque.
           </p>
         </div>
-        <div className="mt-12">
+        <div className="mt-12 flex">
           <Recipes></Recipes>
         </div>
       </main>

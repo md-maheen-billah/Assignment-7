@@ -10,7 +10,7 @@ const Recipes = () => {
       .then((data) => setRecipes(data));
   }, []);
   return (
-    <div className="grid grid-cols-2">
+    <div className="grid grid-cols-2 gap-6">
       {recipes.map((recipe, idx) => (
         <Recipe key={idx} recipe={recipe}></Recipe>
       ))}
