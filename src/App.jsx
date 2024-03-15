@@ -1,10 +1,22 @@
+import { useState } from "react";
 import "./App.css";
 import Banner from "./components/Banner/Banner";
-import Cart from "./components/Cart/Cart";
 import Navbar from "./components/Navbar/Navbar";
 import Recipes from "./components/Recipes/Recipes";
+import Sidebar from "./components/Sidebar/Sidebar";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
+  const [wantToCook, setWantToCook] = useState([]);
+  const handleWantToCook = (recipe) => {
+    const isExist = wantToCook.find((rd) => rd.id == recipe.id);
+    if (!isExist) {
+      setWantToCook([...wantToCook, recipe]);
+    } else {
+      toast.error("Item already selected");
+    }
+  };
   return (
     <>
       <header className="max-w-[1320px] mx-auto">
@@ -27,16 +39,14 @@ function App() {
         </div>
         <div className="mt-12 flex gap-6">
           <div className="w-8/12">
-            <Recipes></Recipes>
+            <Recipes handleWantToCook={handleWantToCook}></Recipes>
           </div>
           <div className="w-4/12">
-            <Cart></Cart>
+            <Sidebar handleWantToCook={handleWantToCook}></Sidebar>
           </div>
         </div>
-        <button className="rounded-[50px] bg-opacity-100 font-bold text-white text-[20px] border-2 border-red-50 px-6 py-3">
-          Our Feedback
-        </button>
       </main>
+      <ToastContainer></ToastContainer>
     </>
   );
 }

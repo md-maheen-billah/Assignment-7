@@ -1,7 +1,9 @@
 import clock from "../../assets/images/clock.svg";
 import flame from "../../assets/images/Frame.svg";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import PropTypes from "prop-types";
-const Recipe = ({ recipe }) => {
+const Recipe = ({ recipe, handleWantToCook }) => {
   const { image, name, description, ingredients, time, calories } = recipe;
   return (
     <div className="p-6 rounded-3xl border-2">
@@ -30,14 +32,19 @@ const Recipe = ({ recipe }) => {
           <p>{calories} calories</p>
         </div>
       </div>
-      <button className="btn rounded-[50px] bg-[#0BE58A] font-bold text-[18px] border-2 border-[#0BE58A] px-6 py-3 mt-6">
+      <button
+        onClick={() => handleWantToCook(recipe)}
+        className="btn rounded-[50px] bg-[#0BE58A] font-bold text-[18px] border-2 border-[#0BE58A] px-6 py-3 mt-6"
+      >
         Want to Cook
       </button>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };
 Recipe.propTypes = {
   recipe: PropTypes.object.isRequired,
+  handleWantToCook: PropTypes.func.isRequired,
 };
 
 export default Recipe;
