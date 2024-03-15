@@ -10,10 +10,10 @@ const Banner = () => {
         world-class Programmer.
       </p>
       <div className="flex justify-center gap-6 mt-6">
-        <button className="rounded-[50px] bg-[#0BE58A] font-bold text-[20px] border-2 border-[#0BE58A] px-6 py-3">
+        <button className="btn rounded-[50px] bg-[#0BE58A] font-bold text-[20px] border-2 border-[#0BE58A] px-6 py-3">
           Explore Now
         </button>
-        <button className="rounded-[50px] bg-opacity-100 font-bold text-white text-[20px] border-2 border-red-50 px-6 py-3">
+        <button className="rounded-[50px] bg-opacity-100 font-bold text-white text-[20px] border-2 border-red-50 px-6 py-1 hover:bg-gray-500 hover:animate-pulse">
           Our Feedback
         </button>
       </div>
