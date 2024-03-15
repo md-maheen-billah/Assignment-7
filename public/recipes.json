@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/NKd8Y4t/Spaghetti-Carbonara.jpg",
+    "name": "Spaghetti Carbonara",
+    "description": "A classic Italian pasta dish made with eggs, cheese, bacon, and black pepper.",
+    "ingredients": [
+      "200g spaghetti",
+      "2 eggs",
+      "150g bacon",
+      "50g Parmesan cheese",
+      "black pepper (to taste)"
+    ],
+    "time": "30 minutes",
+    "calories": 450
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/X2hsfzm/Chicken-Alfredo.jpg",
+    "name": "Chicken Alfredo",
+    "description": "Creamy pasta dish with grilled chicken, garlic, and Parmesan cheese.",
+    "ingredients": [
+      "250g fettuccine",
+      "300g chicken breast",
+      "200ml heavy cream",
+      "3 cloves garlic",
+      "100g Parmesan cheese"
+    ],
+    "time": "45 minutes",
+    "calories": 600
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/wSb2Snh/Vegetable-Stir-Fry.jpg",
+    "name": "Vegetable Stir Fry",
+    "description": "A quick and healthy stir fry made with colorful vegetables and a savory sauce.",
+    "ingredients": [
+      "2 bell peppers",
+      "1 head broccoli",
+      "2 carrots",
+      "100g snap peas",
+      "50ml soy sauce"
+    ],
+    "time": "20 minutes",
+    "calories": 300
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/tLy6trR/Beef-Tacos.jpg",
+    "name": "Beef Tacos",
+    "description": "Mexican-style tacos filled with seasoned ground beef, lettuce, cheese, and salsa.",
+    "ingredients": [
+      "300g ground beef",
+      "6 taco shells",
+      "1 head lettuce",
+      "100g cheddar cheese",
+      "150g salsa"
+    ],
+    "time": "25 minutes",
+    "calories": 400
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/2Mb6zDc/Mushroom-Risotto.jpg",
+    "name": "Mushroom Risotto",
+    "description": "Creamy Italian rice dish made with Arborio rice, mushrooms, and white wine.",
+    "ingredients": [
+      "200g Arborio rice",
+      "300g mushrooms",
+      "500ml vegetable broth",
+      "100ml white wine",
+      "50g Parmesan cheese"
+    ],
+    "time": "35 minutes",
+    "calories": 550
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/YyjCW7k/Grilled-Salmon.jpg",
+    "name": "Grilled Salmon",
+    "description": "Healthy grilled salmon fillets seasoned with lemon, garlic, and herbs.",
+    "ingredients": [
+      "2 salmon fillets",
+      "1 lemon",
+      "2 cloves garlic",
+      "2 tbsp olive oil",
+      "fresh herbs (to taste)"
+    ],
+    "time": "15 minutes",
+    "calories": 350
+  }
+]
