@@ -17,8 +17,9 @@ function App() {
     const isExist2 = cooking.find((rd) => rd.id == recipe.id);
     if (!isExist && !isExist2) {
       setWantToCook([...wantToCook, recipe]);
+      toast.success("Item Added!");
     } else {
-      toast.error("Item already Selected or Cooking");
+      toast.error("Item already Selected or Cooking!");
     }
   };
   const handlePreparing = (recipe) => {
@@ -29,6 +30,7 @@ function App() {
     setTime(newTime);
     const newCalories = calories + recipe.calories;
     setCalories(newCalories);
+    toast.success("Item approved for Cooking!");
   };
   return (
     <>
