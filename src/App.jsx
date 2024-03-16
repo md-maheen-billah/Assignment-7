@@ -7,12 +7,29 @@ import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
   const [wantToCook, setWantToCook] = useState([]);
+  const [cooking, setCooking] = useState([]);
+  const [time, setTime] = useState(0);
+  const [calories, setCalories] = useState(0);
   const handleWantToCook = (recipe) => {
     const isExist = wantToCook.find((rd) => rd.id == recipe.id);
     if (!isExist) {
       setWantToCook([...wantToCook, recipe]);
     } else {
       alert("Item already selected");
+    }
+  };
+  const handlePreparing = (recipe) => {
+    const newWantToCook = wantToCook.filter((item) => item.id != recipe.id);
+    setWantToCook(newWantToCook);
+    const isExist = cooking.find((rd) => rd.id == recipe.id);
+    if (!isExist) {
+      setCooking([...cooking, recipe]);
+      const newTime = time + recipe.time;
+      setTime(newTime);
+      const newCalories = calories + recipe.calories;
+      setCalories(newCalories);
+    } else {
+      alert("Item already cooking");
     }
   };
   return (
@@ -43,6 +60,10 @@ function App() {
             <Sidebar
               handleWantToCook={handleWantToCook}
               wantToCook={wantToCook}
+              handlePreparing={handlePreparing}
+              cooking={cooking}
+              time={time}
+              calories={calories}
             ></Sidebar>
           </div>
         </div>

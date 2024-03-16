@@ -1,6 +1,5 @@
 import clock from "../../assets/images/clock.svg";
 import flame from "../../assets/images/Frame.svg";
-import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import PropTypes from "prop-types";
 const Recipe = ({ recipe, handleWantToCook }) => {
@@ -38,7 +37,6 @@ const Recipe = ({ recipe, handleWantToCook }) => {
       >
         Want to Cook
       </button>
-      <ToastContainer></ToastContainer>
     </div>
   );
 };

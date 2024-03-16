@@ -11,7 +11,7 @@
       "50g Parmesan cheese",
       "black pepper (to taste)"
     ],
-    "time": "30",
+    "time": 30,
     "calories": 450
   },
   {
@@ -26,7 +26,7 @@
       "3 cloves garlic",
       "100g Parmesan cheese"
     ],
-    "time": "45",
+    "time": 45,
     "calories": 600
   },
   {
@@ -41,7 +41,7 @@
       "100g snap peas",
       "50ml soy sauce"
     ],
-    "time": "20",
+    "time": 20,
     "calories": 300
   },
   {
@@ -56,7 +56,7 @@
       "100g cheddar cheese",
       "150g salsa"
     ],
-    "time": "25",
+    "time": 25,
     "calories": 400
   },
   {
@@ -71,7 +71,7 @@
       "100ml white wine",
       "50g Parmesan cheese"
     ],
-    "time": "35",
+    "time": 35,
     "calories": 550
   },
   {
@@ -86,7 +86,7 @@
       "2 tbsp olive oil",
       "fresh herbs (to taste)"
     ],
-    "time": "15",
+    "time": 15,
     "calories": 350
   }
 ]
