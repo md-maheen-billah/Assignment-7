@@ -12,25 +12,21 @@ function App() {
   const [calories, setCalories] = useState(0);
   const handleWantToCook = (recipe) => {
     const isExist = wantToCook.find((rd) => rd.id == recipe.id);
-    if (!isExist) {
+    const isExist2 = cooking.find((rd) => rd.id == recipe.id);
+    if (!isExist && !isExist2) {
       setWantToCook([...wantToCook, recipe]);
     } else {
-      alert("Item already selected");
+      alert("Item already Selected or Cooking");
     }
   };
   const handlePreparing = (recipe) => {
     const newWantToCook = wantToCook.filter((item) => item.id != recipe.id);
     setWantToCook(newWantToCook);
-    const isExist = cooking.find((rd) => rd.id == recipe.id);
-    if (!isExist) {
-      setCooking([...cooking, recipe]);
-      const newTime = time + recipe.time;
-      setTime(newTime);
-      const newCalories = calories + recipe.calories;
-      setCalories(newCalories);
-    } else {
-      alert("Item already cooking");
-    }
+    setCooking([...cooking, recipe]);
+    const newTime = time + recipe.time;
+    setTime(newTime);
+    const newCalories = calories + recipe.calories;
+    setCalories(newCalories);
   };
   return (
     <>
@@ -47,9 +43,9 @@ function App() {
         <div className="mt-20 text-center">
           <h2 className="text-[40px] font-semibold">Our Recipes</h2>
           <p className="text-[16px] leading-[26px] text-[#736d80] px-56 mt-4">
-            Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus
-            vulputate netus pharetra rhoncus. Eget urna volutpat curabitur
-            elementum mauris aenean neque.
+            Savor the exquisite flavors of our culinary creations, meticulously
+            prepared with fresh ingredients and seasoned to perfection,
+            promising an unforgettable dining experience for every palate.
           </p>
         </div>
         <div className="mt-12 flex gap-6">

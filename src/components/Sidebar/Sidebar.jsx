@@ -43,7 +43,7 @@ const Sidebar = ({ wantToCook, handlePreparing, cooking, time, calories }) => {
         <h2 className="w-24 text-[#525252] font-medium">
           Total Time = {time} minutes
         </h2>
-        <h2 className="w-32 text-[#525252] font-medium">
+        <h2 className="w-[120px] text-[#525252] font-medium">
           Total Calories = {calories} calories
         </h2>
       </div>
