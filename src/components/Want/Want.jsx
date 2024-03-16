@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 const Want = ({ recipe, idx, handlePreparing }) => {
   return (
-    <div className="flex flex-col lg:flex-row items-center">
+    <div className="flex flex-col lg:flex-row lg:items-center">
       <div className="flex items-center py-3">
         <p className="w-12 text-center text-[#525252] font-bold">{idx + 1}</p>
         <p className="w-24 mr-4 text-[#676767] leading-6">{recipe.name}</p>
