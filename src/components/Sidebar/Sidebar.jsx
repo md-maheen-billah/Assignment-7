@@ -31,8 +31,10 @@ const Sidebar = ({ wantToCook, handlePreparing, cooking, time, calories }) => {
 
       <div className="flex ml-12 mb-3">
         <h2 className="text-[#878787] font-medium">Name</h2>
-        <h2 className="ml-28 mr-3 text-[#878787] font-medium">Time</h2>
-        <h2 className="ml-16 text-[#878787] font-medium">Calories</h2>
+        <h2 className="ml-16 lg:ml-28 lg:mr-3 text-[#878787] font-medium">
+          Time
+        </h2>
+        <h2 className="ml-12 lg:ml-16 text-[#878787] font-medium">Calories</h2>
       </div>
       <div className="bg-[#f9f9f9]">
         {cooking.map((recipe, idx) => (

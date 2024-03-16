@@ -35,24 +35,24 @@ function App() {
           <Navbar></Navbar>
         </nav>
         {/* banner */}
-        <section className="mt-12">
+        <section className="mt-4 mx-2 lg:mt-12">
           <Banner></Banner>
         </section>
       </header>
       <main className="max-w-[1320px] mx-auto">
-        <div className="mt-20 text-center">
-          <h2 className="text-[40px] font-semibold">Our Recipes</h2>
-          <p className="text-[16px] leading-[26px] text-[#736d80] px-56 mt-4">
+        <div className="mt-4 lg:mt-20 text-center">
+          <h2 className="text-3xl lg:text-[40px] font-semibold">Our Recipes</h2>
+          <p className="text-[16px] leading-[26px] text-[#736d80] lg:px-56 mt-4">
             Savor the exquisite flavors of our culinary creations, meticulously
             prepared with fresh ingredients and seasoned to perfection,
             promising an unforgettable dining experience for every palate.
           </p>
         </div>
-        <div className="mt-12 flex gap-6">
-          <div className="w-8/12">
+        <div className="mt-4 lg:mt-12 flex flex-col lg:flex-row gap-6">
+          <div className="lg:w-8/12">
             <Recipes handleWantToCook={handleWantToCook}></Recipes>
           </div>
-          <div className="w-4/12">
+          <div className="lg:w-4/12">
             <Sidebar
               handleWantToCook={handleWantToCook}
               wantToCook={wantToCook}

@@ -5,7 +5,11 @@ const Navbar = () => {
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost lg:hidden pl-0"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -39,7 +43,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-[32px] font-bold p-0">
+          <a className="btn btn-ghost text-[28px] lg:text-[32px] font-bold p-0">
             Recipe Calories
           </a>
         </div>
@@ -61,7 +65,7 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end">
-          <label className="input bg-[#f3f3f4] rounded-3xl flex items-center gap-2 mr-4">
+          <label className="input bg-[#f3f3f4] rounded-3xl items-center gap-2 mr-4 hidden lg:flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"

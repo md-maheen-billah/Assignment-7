@@ -11,7 +11,7 @@ const Recipes = ({ handleWantToCook }) => {
       .then((data) => setRecipes(data));
   }, []);
   return (
-    <div className="grid grid-cols-2 gap-6">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mx-2 lg:mx-0">
       {recipes.map((recipe, idx) => (
         <Recipe
           key={idx}
