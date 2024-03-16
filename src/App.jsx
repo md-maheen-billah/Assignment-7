@@ -4,8 +4,6 @@ import Banner from "./components/Banner/Banner";
 import Navbar from "./components/Navbar/Navbar";
 import Recipes from "./components/Recipes/Recipes";
 import Sidebar from "./components/Sidebar/Sidebar";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [wantToCook, setWantToCook] = useState([]);
@@ -14,7 +12,7 @@ function App() {
     if (!isExist) {
       setWantToCook([...wantToCook, recipe]);
     } else {
-      toast.error("Item already selected");
+      alert("Item already selected");
     }
   };
   return (
@@ -42,11 +40,13 @@ function App() {
             <Recipes handleWantToCook={handleWantToCook}></Recipes>
           </div>
           <div className="w-4/12">
-            <Sidebar handleWantToCook={handleWantToCook}></Sidebar>
+            <Sidebar
+              handleWantToCook={handleWantToCook}
+              wantToCook={wantToCook}
+            ></Sidebar>
           </div>
         </div>
       </main>
-      <ToastContainer></ToastContainer>
     </>
   );
 }
